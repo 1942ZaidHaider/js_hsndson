@@ -4,10 +4,8 @@ function print(str){
     out.innerHTML=str;
 }
 let r= 12;
-// This is a single line comment
-/* This is a multiple  
-line comment */
+let x=r;
 
-output=r+" Stored in variable r";
+output="r = "+r+", x = "+x;
 
 onload=print(output);
