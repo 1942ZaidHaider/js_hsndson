@@ -3,8 +3,8 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-let c = 45;
+var c = "hello world";
 
-output="c initialized to "+c ;
+output="string variable c to "+c ;
 
 onload=print(output);
