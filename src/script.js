@@ -4,9 +4,8 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
   }
-function functionWithArgs(a,b){
-    console.log(a+b);
+function timesFive(a){
+    return(a*5);
 }
-functionWithArgs(12,45);
-output = `refer to console`;
+output = `${timesFive(2)}`;
 onload = print(output); //Output
