@@ -4,8 +4,8 @@ function print(str){
     out.innerHTML=str;
 }
 var x = 'hello';
-var y ='world';
-output=x+" "+y;//`${x}`;
+x +=' world';
+output=x;//`${x}`;
 
 
 console.log(output);
