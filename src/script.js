@@ -6,7 +6,7 @@ function print(str) {
 }
 // Setup
 function testNotEqual(val) {
-    if (val != 99) { // Change this line
+    if (val !== 99) { // Change this line
       return "Not Equal";
     }
     return "Equal";
@@ -14,5 +14,5 @@ function testNotEqual(val) {
   
 
   
-output = `${testNotEqual(10)}<br>\n${testNotEqual(99)}<br>\n${testNotEqual("12")}`; //oops global cannot be accessed because it is local to fun1
+output = `${testNotEqual(10)}<br>\n${testNotEqual(99)}<br>\n${testNotEqual("99")}`; //oops global cannot be accessed because it is local to fun1
 onload = print(output); //Output
