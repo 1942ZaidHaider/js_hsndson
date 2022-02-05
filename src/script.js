@@ -5,8 +5,9 @@ function print(str){
 }
 var x = 'hello';
 var y =' world';
-y+="-Appended"
-output=`${x}: first char = ${x[0]}`;
+// x[0]="H" Error
+x='Hello';
+output=`${x}`;
 
 
 console.log(output);
