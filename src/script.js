@@ -27,10 +27,11 @@ var recordCollection = {
 
 // Only change code below this line
 // Setup
-const myArray = [];
-for (let i = 9; i > 0; i -= 2) {
-  myArray.push(i);
+// Setup
+var total=0;
+const myArr = [2, 3, 4, 5, 6];
+for(let i=0;i<myArr.length;i++){
+total+=myArr[i];
 }
-
-output = `${myArray}`;
+output = `${myArr}`;
 onload = print(output); //Output
