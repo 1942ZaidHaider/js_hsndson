@@ -3,10 +3,9 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-var x = "FirstLine \n\t\\SecondLine\nThirdLine\
-"
+var x = 'this is a string in single quotes'
 output=x;//`${x}`;
 
 
 console.log(output);
-onload=print("in console"); //Output
+onload=print(output); //Output
