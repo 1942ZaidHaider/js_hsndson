@@ -3,9 +3,8 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-let r= 12;
-let x=r;
+let c = 45;
 
-output="r = "+r+", x = "+x;
+output="c initialized to "+c ;
 
 onload=print(output);
