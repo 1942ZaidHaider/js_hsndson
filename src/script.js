@@ -7,7 +7,7 @@ var x = 'hello';
 var y =' world';
 // x[0]="H" Error
 x='Hello';
-output=`${x}[3] = ${x[3]}`;
+output=`last char of ${x} = ${x[x.length-1]}`;
 
 
 console.log(output);
