@@ -4,7 +4,7 @@ function print(str){
     out.innerHTML=str;
 }
 const ar=["dog","cat","pokemon",["raichu","aabra","Garados"]];
-output=`${ar}<br>\t Shift: ${ar.shift()}<br>\t${ar}`;
+output=`${ar}<br>\t unshift(Lion): ${ar.unshift("Lion")}<br>\t${ar}`;
 
 
 console.log(output);
