@@ -3,8 +3,8 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-var c = "hello world";
+var c;
 
-output="string variable c to "+c ;
+output="variable is set to "+c ;
 
 onload=print(output);
