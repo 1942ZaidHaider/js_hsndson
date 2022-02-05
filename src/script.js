@@ -4,6 +4,6 @@ function print(str){
     out.innerHTML=str;
 }
 const x = 45;
-// x= 43 // this will give error;
-output="Constant variables cannot be changed: x =" +x ;
+const y = 90;
+output=x+"+"+y+"="+(x+y);
 onload=print(output);
