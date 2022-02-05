@@ -6,23 +6,12 @@ function print(str) {
 }
 let count = 0;
 
-function cc(card) {
-  // Only change code below this line
-  var regex = /[JQKA]/;
-  if (card > 1 && card < 7) {
-    count++;
-  } else if (card === 10 || regex.test(card)) {
-    count--;
-  }
-
-  if (count > 0) return count + " Bet";
-  return count + " Hold";
-
-  // Only change code above this line
-}
-
-cc(2); cc(3); cc(7); cc('K'); 
-  
-  output=cc('A');
-// output = `${testLogicalAnd(10)}`;
+const myDog = {
+    // Only change code below this line
+  name:"Milo",
+  legs:4,
+  tails:1,friends:['me']
+    // Only change code above this line
+  };
+output = `${myDog} ${myDog.name}`;
 onload = print(output); //Output
