@@ -3,7 +3,7 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-const x = 45;
+const x = 2;
 const y = 90;
-output=x+"*"+y+"="+(x*y);
+output=y+"/"+x+"="+(y/x);
 onload=print(output);
