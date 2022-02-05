@@ -5,11 +5,16 @@ function print(str) {
   out.innerHTML = str;
   }
 
-  function myLocalScope() {
-    // Only change code below this line
-    myVar=12;
-    console.log('inside myLocalScope', myVar);
-  }
-  myLocalScope();
-output = `Refer to console`; //oops global cannot be accessed because it is local to fun1
+ // Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+    let outerWear="Sweater";
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+output = `${myOutfit()}`; //oops global cannot be accessed because it is local to fun1
 onload = print(output); //Output
