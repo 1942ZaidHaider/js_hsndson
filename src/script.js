@@ -3,11 +3,7 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-var c = 12;
-var c = 12;
-
-let x= 3;
-// let x= 3; will give error 
-output="let variables cannot be initialized again" ;
-
+const x = 45;
+// x= 43 // this will give error;
+output="Constant variables cannot be changed: x =" +x ;
 onload=print(output);
