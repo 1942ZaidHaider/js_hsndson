@@ -4,8 +4,7 @@ function print(str){
     out.innerHTML=str;
 }
 const ar=["dog","cat","pokemon",["raichu","aabra","Garados"]];
-ar[3] = "Elephant";
-output=`ar[0] ${ar[0]}<br>\nar[1] ${ar[1]}<br>\nar[2] ${ar[2]}<br>\nar[3] ${ar[3]}<br>\n`;
+output=`ar[3][0] ${ar[3][0]}<br>\nar[3][1] ${ar[3][1]}<br>\n`;
 
 
 console.log(output);
