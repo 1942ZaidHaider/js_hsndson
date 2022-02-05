@@ -6,7 +6,7 @@ function print(str){
 var x = 'hello';
 var y =' world';
 y+="-Appended"
-output=x+y;//`${x}`;
+output=`${x} is ${x.length} chars long`;
 
 
 console.log(output);
