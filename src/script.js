@@ -6,14 +6,14 @@ function print(str) {
 }
 // Setup
 const testObj = {
-    "hat": "ballcap",
-    "shirt": "jersey",
-    "shoes": "cleats"
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
   };
   
   // Only change code below this line
-  const hatValue = testObj.hat;      // Change this line
-  const shirtValue = testObj.shirt;    // Change this line
+  const entreeValue = testObj["an entree"];   // Change this line
+  const drinkValue = testObj["the drink"];    // Change this line
 
-output = `${hatValue} ${shirtValue}`;
+output = `${entreeValue} ${drinkValue}`;
 onload = print(output); //Output
