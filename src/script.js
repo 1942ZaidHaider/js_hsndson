@@ -5,15 +5,21 @@ function print(str) {
   out.innerHTML = str;
 }
 // Setup
-const myDog = {
-    "name": "Happy Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["freeCodeCamp Campers"],
-    "bark": "woof"
-  };
-  
+function phoneticLookup(val) {
+    let result = "";
   // Only change code below this line
-  delete myDog.bark;
-  output=`CONSOLE: N/A`;
+  var lookup = {
+  'alpha': 'Adams',
+  'bravo': 'Boston',
+  'charlie':'Chicago',
+  'delta': 'Denver',
+  'echo': 'Easy',
+  'foxtrot': 'Frank'
+  };
+  result = lookup[val];
+  return result;
+  }
+  
+  
+  output=phoneticLookup("charlie");
 onload = print(output); //Output
