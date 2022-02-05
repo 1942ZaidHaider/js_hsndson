@@ -5,21 +5,12 @@ function print(str) {
   out.innerHTML = str;
 }
 // Setup
-function phoneticLookup(val) {
-    let result = "";
-  // Only change code below this line
-  var lookup = {
-  'alpha': 'Adams',
-  'bravo': 'Boston',
-  'charlie':'Chicago',
-  'delta': 'Denver',
-  'echo': 'Easy',
-  'foxtrot': 'Frank'
-  };
-  result = lookup[val];
-  return result;
+function checkObj(obj, checkProp) {
+    // Only change code below this line
+    return obj.hasOwnProperty(checkProp)?obj[checkProp]:"Not Found";
+    // Only change code above this line
   }
   
   
-  output=phoneticLookup("charlie");
+  output="None";
 onload = print(output); //Output
