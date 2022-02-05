@@ -3,22 +3,15 @@ function print(str) {
   console.log(str);
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
-  }
-  function nextInLine(arr, item) {
+}
+
+function welcomeToBooleans() {
     // Only change code below this line
-    arr.push(item);
-    item=arr.shift();
-    return item;
+  
+    return true; // Change this line
+  
     // Only change code above this line
   }
-  
-  // Setup
-  const testArr = [1, 2, 3, 4, 5];
-  
-  // Display code
-  console.log("Before: " + JSON.stringify(testArr));
-  console.log(nextInLine(testArr, 6));
-  console.log("After: " + JSON.stringify(testArr));
 
-output = `CONSOLE`; //oops global cannot be accessed because it is local to fun1
+output = `${welcomeToBooleans()}`; //oops global cannot be accessed because it is local to fun1
 onload = print(output); //Output
