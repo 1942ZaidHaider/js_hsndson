@@ -4,13 +4,16 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
+// Setup
 const myDog = {
     "name": "Happy Coder",
     "legs": 4,
     "tails": 1,
-    "friends": ["freeCodeCamp Campers"]
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
   };
-  myDog.bark="bark";  
-
-output = `${myDog.bark}`;
+  
+  // Only change code below this line
+  delete myDog.bark;
+  output=`CONSOLE: N/A`;
 onload = print(output); //Output
