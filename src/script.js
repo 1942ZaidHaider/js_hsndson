@@ -5,5 +5,5 @@ function print(str){
 }
 const x = 2;
 var y = 90;
-output="y="+y+", y++ ="+(++y);
+output="y="+y+", y-- ="+(--y);
 onload=print(output);
