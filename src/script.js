@@ -4,22 +4,34 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
-function testSize(num) {
-  // Only change code below this line
-  if (num < 5) {
-    return "Tiny";
-  } else if (num < 10) {
-    return "Small";
-  } else if (num < 15) {
-    return "Medium";
-  } else if (num < 20) {
-    return "Large";
+const names = [
+  "Hole-in-one!",
+  "Eagle",
+  "Birdie",
+  "Par",
+  "Bogey",
+  "Double Bogey",
+  "Go Home!",
+];
+
+function golfScore(par, strokes) {
+  if (strokes == 1) {
+    return "Hole-in-one!";
+  } else if (strokes <= par - 2) {
+    return "Eagle";
+  } else if (strokes == par - 1) {
+    return "Birdie";
+  } else if (strokes == par) {
+    return "Par";
+  } else if (strokes == par + 1) {
+    return "Bogey";
+  } else if (strokes == par + 2) {
+    return "Double Bogey";
   } else {
-    return "Huge";
+    return "Go Home!";
   }
-  // Only change code above this line
 }
 
-output = testSize(7);
+output = golfScore(5, 4);
 // output = `${testLogicalAnd(10)}`;
 onload = print(output); //Output
