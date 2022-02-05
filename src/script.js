@@ -4,19 +4,16 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
-function testGreaterOrEqual(val) {
-    if (val >= 20) {  // Change this line
-      return "20 or Over";
+function testLessThan(val) {
+    if (val < 25) {  // Change this line
+      return "Under 25";
     }
   
-    if (val >= 10) {  // Change this line
-      return "10 or Over";
+    if (val < 55) {  // Change this line
+      return "Under 55";
     }
   
-    return "Less than 10";
-  }
-  
-  testGreaterOrEqual(10);
-    
-output = `${testGreaterOrEqual(10)}`; //oops global cannot be accessed because it is local to fun1
+    return "55 or Over";
+  }    
+output = `${testLessThan(10)}`; //oops global cannot be accessed because it is local to fun1
 onload = print(output); //Output
