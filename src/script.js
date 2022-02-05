@@ -28,10 +28,12 @@ var recordCollection = {
   // Only change code below this line
 // Setup
 const myArray = [];
-let i=5;
-while(i >= 0){
-  myArray[myArray.length]=i--;
-} 
+for(let i=1;i<6;i++)
+{
+  myArray[myArray.length]=i
+}
+// Only change code below this line
+
 // Only change code below this line
   output=`${myArray}`;
 onload = print(output); //Output
