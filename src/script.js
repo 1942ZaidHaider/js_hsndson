@@ -3,9 +3,11 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-var c =10;
-var C=12;
+var c = 12;
+var c = 12;
 
-output="c = "+c+", C = "+C ;
+let x= 3;
+// let x= 3; will give error 
+output="let variables cannot be initialized again" ;
 
 onload=print(output);
