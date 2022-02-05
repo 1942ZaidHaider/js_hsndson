@@ -3,8 +3,9 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-var c;
+var c =10;
+var C=12;
 
-output="variable is set to "+c ;
+output="c = "+c+", C = "+C ;
 
 onload=print(output);
