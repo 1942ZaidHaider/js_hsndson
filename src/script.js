@@ -4,30 +4,19 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
-const myMusic = [
-    {
-      "artist": "Billy Joel",
-      "title": "Piano Man",
-      "release_year": 1973,
-      "formats": [
-        "CD",
-        "8T",
-        "LP"
-      ],
-      "gold": true
-    },
-     {
-      "artist": "Billy Joel",
-      "title": "Piano Man",
-      "release_year": 1973,
-      "formats": [
-        "CD",
-        "8T",
-        "LP"
-      ],
-      "gold": true
+const myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
     }
-  ]; 
+  };
   
-  output=myMusic;
+  const gloveBoxContents =myStorage.car.inside["glove box"];
+  
+  output=gloveBoxContents;
 onload = print(output); //Output
