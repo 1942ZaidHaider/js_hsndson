@@ -7,7 +7,7 @@ var x = 'hello';
 var y =' world';
 // x[0]="H" Error
 x='Hello';
-output=`${x}`;
+output=`${x}[3] = ${x[3]}`;
 
 
 console.log(output);
