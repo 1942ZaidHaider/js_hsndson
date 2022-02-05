@@ -4,14 +4,16 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
-let count = 0;
-
-const myDog = {
-    // Only change code below this line
-  name:"Milo",
-  legs:4,
-  tails:1,friends:['me']
-    // Only change code above this line
+// Setup
+const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
   };
-output = `${myDog} ${myDog.name}`;
+  
+  // Only change code below this line
+  const hatValue = testObj.hat;      // Change this line
+  const shirtValue = testObj.shirt;    // Change this line
+
+output = `${hatValue} ${shirtValue}`;
 onload = print(output); //Output
