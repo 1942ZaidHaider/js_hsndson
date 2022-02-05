@@ -4,15 +4,21 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
   }
-// Setup
-let processed = 0;
+  function nextInLine(arr, item) {
+    // Only change code below this line
+    arr.push(item);
+    item=arr.shift();
+    return item;
+    // Only change code above this line
+  }
+  
+  // Setup
+  const testArr = [1, 2, 3, 4, 5];
+  
+  // Display code
+  console.log("Before: " + JSON.stringify(testArr));
+  console.log(nextInLine(testArr, 6));
+  console.log("After: " + JSON.stringify(testArr));
 
-function processArg(num) {
-  return (num + 3) / 5;
-}
-
-// Only change code below this line
-processed=processArg(7);
-
-output = `${processed}`; //oops global cannot be accessed because it is local to fun1
+output = `CONSOLE`; //oops global cannot be accessed because it is local to fun1
 onload = print(output); //Output
