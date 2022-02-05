@@ -4,6 +4,6 @@ function print(str){
     out.innerHTML=str;
 }
 const x = 2;
-const y = 90;
-output=y+"/"+x+"="+(y/x);
+var y = 90;
+output="y="+y+", y++ ="+(++y);
 onload=print(output);
