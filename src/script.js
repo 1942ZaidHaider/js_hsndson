@@ -1,16 +1,12 @@
 function print(str) {
   out = document.getElementById("out");
+  console.log(str);
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
+  }
+function reusableFunction(){
+    console.log("Hello World")
 }
-const ar = [
-  ["Milk", 5],
-  ["Bread", 1],
-  ["Egg", 36],
-  ["Cabbage", 6],
-  ["Coffee", 100]
-];
-output = `${ar}`;
-
-console.log(output);
+reusableFunction();
+output = `refer to console`;
 onload = print(output); //Output
