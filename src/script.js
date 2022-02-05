@@ -8,4 +8,6 @@ let r= 12;
 /* This is a multiple  
 line comment */
 
-onload=print("r set to: "+r);
+output=r+" Stored in variable r";
+
+onload=print(output);
