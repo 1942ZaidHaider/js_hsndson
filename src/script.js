@@ -3,9 +3,10 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-var x = 'this is a \t \'string\' \n in single quotes'
-output=x;//`${x}`;
+var x = 'hello';
+var y ='world';
+output=x+" "+y;//`${x}`;
 
 
 console.log(output);
-onload=print("console"); //Output
+onload=print(output); //Output
