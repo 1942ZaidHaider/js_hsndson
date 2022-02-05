@@ -4,15 +4,14 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
-function trueOrFalse(wasThatTrue) {
-    // Only change code below this line
-    if(wasThatTrue)
-        return "Yes, That was true";
-    else
-        return "No, That was false";  
-    // Only change code above this line
-  
+// Setup
+function testEqual(r) {
+    if (r==12) { // Change this line
+      return "Equal";
+    }
+    return "Not Equal";
   }
-
-output = `${trueOrFalse(true)}<br>\t${trueOrFalse(false)}`; //oops global cannot be accessed because it is local to fun1
+  
+  
+output = `${testEqual(10)}<br>\t${testEqual("12")}<br>\t${testEqual(12)}`; //oops global cannot be accessed because it is local to fun1
 onload = print(output); //Output
