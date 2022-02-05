@@ -3,7 +3,7 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-const x = 2;
-var y = 90.1;
-output="y="+y;
+const x = 2.1;
+var y = 1.1;
+output=`${x} * ${y} = ${x*y}`;
 onload=print(output);
