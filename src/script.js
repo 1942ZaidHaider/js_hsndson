@@ -4,8 +4,8 @@ function print(str){
     out.innerHTML=str;
 }
 var x = 43;
-x *= 5;
-output=`x=43 => x*=5 => ${x}`;
+x /= 5;
+output=`x=43 => x/=5 => ${x}`;
 
 
 
