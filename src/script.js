@@ -4,9 +4,9 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
   }
-function reusableFunction(){
-    console.log("Hello World")
+function functionWithArgs(a,b){
+    console.log(a+b);
 }
-reusableFunction();
+functionWithArgs(12,45);
 output = `refer to console`;
 onload = print(output); //Output
