@@ -4,17 +4,15 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
   }
+// Setup
+let processed = 0;
 
-  let sum = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
 
-  function addThree() {
-    sum = sum + 3;
-  }
-  
-  // Only change code below this line
-  function addFive() {
-    sum = sum + 5;
-  }
+// Only change code below this line
+processed=processArg(7);
 
-output = `${typeof(addFive())}`; //oops global cannot be accessed because it is local to fun1
+output = `${processed}`; //oops global cannot be accessed because it is local to fun1
 onload = print(output); //Output
