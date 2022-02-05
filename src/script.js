@@ -4,8 +4,7 @@ function print(str){
     out.innerHTML=str;
 }
 const ar=["dog","cat","pokemon",["raichu","aabra","Garados"]];
-ar.push("Fluffy")
-output=`pushed Fluffy: ${ar}`;
+output=`${ar.pop()}<br>\t after pop: ${ar}`;
 
 
 console.log(output);
