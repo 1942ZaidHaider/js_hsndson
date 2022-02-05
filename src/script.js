@@ -6,7 +6,7 @@ function print(str){
 var x = 'hello';
 var y =' world';
 y+="-Appended"
-output=`${x} is ${x.length} chars long`;
+output=`${x}: first char = ${x[0]}`;
 
 
 console.log(output);
