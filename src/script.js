@@ -4,20 +4,25 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
+let count = 0;
 
-// Setup
-function abTest(a, b) {
-    // Only change code below this line
-    if(a <0 || b < 0){
-      return undefined;
-    }
-  
-  
-    // Only change code above this line
-  
-    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+function cc(card) {
+  // Only change code below this line
+  var regex = /[JQKA]/;
+  if (card > 1 && card < 7) {
+    count++;
+  } else if (card === 10 || regex.test(card)) {
+    count--;
   }
+
+  if (count > 0) return count + " Bet";
+  return count + " Hold";
+
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); 
   
-  output=abTest(2,2); 
+  output=cc('A');
 // output = `${testLogicalAnd(10)}`;
 onload = print(output); //Output
