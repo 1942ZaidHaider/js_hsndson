@@ -4,15 +4,13 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
-// Setup
 const myDog = {
-    "name": "Coder",
+    "name": "Happy Coder",
     "legs": 4,
     "tails": 1,
     "friends": ["freeCodeCamp Campers"]
   };
-  myDog.name="Happy Coder";
-  // Only change code below this line
+  myDog.bark="bark";  
 
-output = `${myDog.name}`;
+output = `${myDog.bark}`;
 onload = print(output); //Output
