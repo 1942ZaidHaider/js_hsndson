@@ -4,16 +4,22 @@ function print(str) {
   str = "Output: <br><br>" + str;
   out.innerHTML = str;
 }
-function testLogicalOr(val) {
+function testElse(val) {
+    let result = "";
     // Only change code below this line
   
-    if (val<10 || val>20) {
-      return "Outside";
+    if (val > 5) {
+      result = "Bigger than 5";
     }
+  
+    else{
+      result = "5 or Smaller";
+    }
+  
     // Only change code above this line
-    return "Inside";
+    return result;
   }
   
-  output=testLogicalOr(15); 
+  output=testElse(4); 
 // output = `${testLogicalAnd(10)}`;
 onload = print(output); //Output
