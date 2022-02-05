@@ -4,7 +4,7 @@ function print(str){
     out.innerHTML=str;
 }
 const ar=["dog","cat","pokemon",["raichu","aabra","Garados"]];
-output=`${ar} <br>\n type of ar.length-1: ${typeof(ar[ar.length-1])}`;
+output=`ar[0] ${ar[0]}<br>\nar[1] ${ar[1]}<br>\nar[2] ${ar[2]}<br>\nar[3] ${ar[3]}<br>\n`;
 
 
 console.log(output);
