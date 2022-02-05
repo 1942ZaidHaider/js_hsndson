@@ -3,10 +3,10 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-var x = 43;
-x /= 5;
-output=`x=43 => x/=5 => ${x}`;
+var x = "FirstLine \n\t\\SecondLine\nThirdLine\
+"
+output=x;//`${x}`;
 
 
-
-onload=print(output); //Output
+console.log(output);
+onload=print("in console"); //Output
