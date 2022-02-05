@@ -3,4 +3,9 @@ function print(str){
     str="Output: <br><br>"+str;
     out.innerHTML=str;
 }
-onload=print("test");
+
+// This is a single line comment
+/* This is a multiple  
+line comment */
+
+onload=print("Comment");
