@@ -1,11 +1,16 @@
-function print(str){
-    out=document.getElementById("out");
-    str="Output: <br><br>"+str;
-    out.innerHTML=str;
+function print(str) {
+  out = document.getElementById("out");
+  str = "Output: <br><br>" + str;
+  out.innerHTML = str;
 }
-const ar=["dog","cat","pokemon",["raichu","aabra","Garados"]];
-output=`${ar}<br>\t unshift(Lion): ${ar.unshift("Lion")}<br>\t${ar}`;
-
+const ar = [
+  ["Milk", 5],
+  ["Bread", 1],
+  ["Egg", 36],
+  ["Cabbage", 6],
+  ["Coffee", 100]
+];
+output = `${ar}`;
 
 console.log(output);
-onload=print(output); //Output
+onload = print(output); //Output
