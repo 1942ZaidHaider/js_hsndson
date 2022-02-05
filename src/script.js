@@ -5,16 +5,16 @@ function print(str) {
   out.innerHTML = str;
   }
 
- // Setup
-const outerWear = "T-Shirt";
+  let sum = 0;
 
-function myOutfit() {
+  function addThree() {
+    sum = sum + 3;
+  }
+  
   // Only change code below this line
-    let outerWear="Sweater";
-  // Only change code above this line
-  return outerWear;
-}
+  function addFive() {
+    sum = sum + 5;
+  }
 
-myOutfit();
-output = `${myOutfit()}`; //oops global cannot be accessed because it is local to fun1
+output = `${typeof(addFive())}`; //oops global cannot be accessed because it is local to fun1
 onload = print(output); //Output
