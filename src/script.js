@@ -6,7 +6,7 @@ function print(str) {
 }
 // Setup
 function testEqual(r) {
-    if (r==12) { // Change this line
+    if (r===12) { // Change this line
       return "Equal";
     }
     return "Not Equal";
